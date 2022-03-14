@@ -1,0 +1,196 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ html {
+   font-family: Arial, Helvetica, sans-serif;
+}
+/*
+NGUYÊN TẮC LÀM: 
+1. làm từ ngoài vào trong
+2. làm từ trên xuống dưới
+3. tổng quan đến chi tiết
+*/
+
+
+/* 
+1.vị trí
+2. kích thước
+3. màu sắc
+4. kiểu dáng ( kiểu chữ, hình tròn , vuông,...)
+*/
+#main{
+   
+    
+}
+
+#header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background-color: #f18121;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav , .subnav{
+    list-style-type: none;/* bởi dùng thẻ ul li nên sẽ có nhưng cái dấu chấm , dùng list-tyle-type để bỏ cái chấm ý đi*/
+}
+
+#nav{
+
+}
+
+#nav > li{
+    display: inline-block;
+    
+}
+
+#nav li{
+position: relative;
+
+}
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+
+text-decoration:none;/* ẩn gạch chân*/
+line-height: 46px; /* chiều cao cho bằng chiều cao header thì chữ sẽ ở giữa */
+padding: 0px 24px;/* để cách các chữ ra 2 bên  24px*/
+display: block;
+}
+
+#nav li:hover .subnav{
+display: block;
+}
+
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;/*màu xám*/
+    
+}
+
+#nav .subnav {
+display: none;
+min-width: 160px;
+background-color: #fff;
+position:absolute;
+box-shadow:0 0 10px rgba(0,0,0,0.3) ;
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#header .search-btn{
+    float: right;
+    padding: 0 16px;
+    cursor: pointer;/* thuoocj tinhs quyết định thay đổi trỏ chuột vd bàn tay*/
+    
+}
+
+#header .search-btn:hover{
+    background-color: red;
+
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+
+
+#nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;/*màu xám*/
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 132%;/* để cho chiều cao =132% chiều rộng*/
+    background-color: #333;/* màu gần đen*/
+    background:url(https://i.pinimg.com/originals/61/bd/08/61bd08f259ce3ef2d32123ed2d713e6e.jpg) top center / cover no-repeat;
+    background-size: contain;
+    
+    
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 48px;
+    left: 50%;/* cách bên trái 50%*/
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-decription{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+#content{
+    
+    
+}
+
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+#content .section-heading{
+    text-align: center;
+    font-size:30px;
+    font-weight:500px;
+    letter-spacing: px;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size:15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    font-size:15px ;
+    margin-top: 25px;
+    text-align: justify;
+    line-height:1.4;
+}
+
+#footer{
+  
+    
+}
