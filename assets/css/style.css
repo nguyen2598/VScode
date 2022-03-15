@@ -22,6 +22,9 @@ NGUYÊN TẮC LÀM:
 3. màu sắc
 4. kiểu dáng ( kiểu chữ, hình tròn , vuông,...)
 */
+.clear{
+    clear: both;
+}
 #main{
    
     
@@ -188,6 +191,27 @@ box-shadow:0 0 10px rgba(0,0,0,0.3) ;
     margin-top: 25px;
     text-align: justify;
     line-height:1.4;
+}
+
+#content .members-list{
+margin-top: 48px;
+
+}
+
+#content .member-item{
+    float:left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+#content .member-img{
+    margin-top:15px;
+    width: 80%;
+    border-radius: 10px;
+   
 }
 
 #footer{
