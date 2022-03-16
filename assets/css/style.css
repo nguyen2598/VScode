@@ -226,14 +226,14 @@ margin-top: 48px;
 
 /* .video-section*/ .video1{ 
     float:right;
-    width: 500px;
+    width: 20%;
     height: 350px;
     
 }
 /* .video-section*/ .video2{ 
     
     float:left;
-    width: 500px;
+    width:20%;
     height: 350px;
     margin-top: 0px;
     
@@ -246,6 +246,7 @@ margin-top: 48px;
     list-style: none;
     background-color: #fff;
     margin-top:40px;
+    width: 85%;
 }
 .tickets-list li{
     font-size:15px;
