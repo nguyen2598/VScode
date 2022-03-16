@@ -218,20 +218,24 @@ margin-top: 48px;
 }
 
 .video-section{
-    text-align: center;
-    background-color:#000;
+    /* text-align: center;
+    background-color:rgb(228, 18, 18);
+    width: 1000px;
+    height: 300px; */
 }
 
-.video-section .video1{
+/* .video-section*/ .video1{ 
     float:right;
     width: 500px;
-    height: 300px;
+    height: 350px;
     
 }
-.video-section .video2{
+/* .video-section*/ .video2{ 
+    
     float:left;
     width: 500px;
-    height: 300px;
+    height: 350px;
+    margin-top: 0px;
     
 }
 
