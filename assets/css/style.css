@@ -225,17 +225,18 @@ margin-top: 48px;
 }
 
 /* .video-section*/ .video1{ 
+    margin-top:70px;
     float:right;
     width: 20%;
-    height: 350px;
+    height: 250px;
     
 }
 /* .video-section*/ .video2{ 
     
+    margin-top:70px;
     float:left;
-    width:20%;
-    height: 350px;
-    margin-top: 0px;
+    width: 20%;
+    height: 250px;
     
 }
 
@@ -262,7 +263,7 @@ margin-top: 48px;
     background-color: red;
     padding:3px 4px;
     margin-left: 16px;
-    border-radius: 40%;
+    /* border-radius: 40%; */
     
 }
 
@@ -277,7 +278,61 @@ margin-top: 48px;
     line-height:24px;
     margin-top: -2px;
 }
+/* place */
+.places-list{
+    margin: 32px -8px 0;/*top trai-phai duoi*/
+    padding-bottom:48px ;
+}
 
+.place-item{
+    float: left;
+    width: 33,333%;
+    padding:0px 8px;
+}
+
+.place-video{
+    width:100%;
+    display:block;
+    height: 380px;
+}
+
+
+.place-body{
+    padding:16px;
+    font-size: 15px;
+    background-color:#fff;
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 550;/* làm mỏng chữ*/
+}
+
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc{
+    margin-top: 15px;
+    line-height:1.6;
+}
+
+.place-buy-btn:hover{
+    color:#000;
+    background-color:#ccc;
+}
+
+.place-buy-btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;/*bỏ gạch chân*/
+    padding :11px 10px;
+    margin-top: 15px;
+    display:inline-block;
+}
+
+/* food review */
 #footer{
   
     
