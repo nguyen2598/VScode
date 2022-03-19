@@ -92,7 +92,7 @@
                                 <h3 class="place-heading">Cute mew</h3>
                                 <p class="place-time">Fri 27 Nov 2022</p>
                                 <p class="place-desc">Maximum cuteness</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-ticket">Whatch a movie</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -101,7 +101,7 @@
                                 <h3 class="place-heading">Main</h3>
                                 <p class="place-time">Sat 28 Nov 2022</p>
                                 <p class="place-desc">Super product from Vietnam</p>
-                                <a href="" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-ticket">Whatch a movie</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -110,7 +110,7 @@
                                 <h3 class="place-heading">Luv </h3>
                                 <p class="place-time">Sun 29 Nov 2022</p>
                                 <p class="place-desc">Watch and experience </p>
-                                <a href="" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-ticket">Whatch a movie</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -129,8 +129,62 @@
         </div>
 
     </div>
+    <!-- modal -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-bag"></i>
+                     MOVIE
+            </header>
 
+            <div class="modal-body">
+                <label for="quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickest,$15 per person
+                </label>
+                <input id="quantity"  class="modal-input" placeholder="How many?">
 
+                <label for="email-input" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input id="email-input" type="email" class="modal-input" placeholder="account number">
+                
+                <button id="buy-tickets">
+                    Pay <i class="ti-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help</a> </p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const buyBtns=document.querySelectorAll('.js-buy-ticket')
+        const modal=document.querySelector('.js-modal')
+        const modalClose=document.querySelector('.js-modal-close')
+        const modalContainer=document.querySelector('.js-modal-container')
+        function showBuyTickets(){
+            modal.classList.add('open')
+        }
+        function hideBuyTickets(){
+            modal.classList.remove('open')
+        }
+        for(const buyBtn of buyBtns){
+            buyBtn.addEventListener('click',showBuyTickets)
+        }
+        modalClose.addEventListener('click',hideBuyTickets)
+
+        modal.addEventListener('click',hideBuyTickets)
+
+        modalContainer.addEventListener('click',function(event){      
+            event.stopPropagation();
+
+        })
+    </script>
 
 </body>
 </html>
