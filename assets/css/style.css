@@ -7,6 +7,7 @@
 
  html {
    font-family: Arial, Helvetica, sans-serif;
+   scroll-behavior:smooth ;
 }
 /*
 NGUYÊN TẮC LÀM: 
@@ -27,6 +28,58 @@ NGUYÊN TẮC LÀM:
 }
 .clear{
     clear: both;
+}
+.text-center{
+    text-align: center!important;
+}
+.pull-right{
+    /* kéo sang phải */
+    float: right!important;
+}
+.btn:hover{
+    color: #000;
+    background-color:#ccc;
+    cursor: pointer;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;/*bỏ gạch chân*/
+    padding :11px 16px;
+    margin-top: 15px;
+    display:inline-block;/* vif Trên có thẻ inline nên làm cho nó bị đè vô chữ để sửa đổi snag inline block*/
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content:"";
+    display: block;
+    clear: both;
+
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width:100%;
+
+}
+.col-third{
+    width: calc(100% / 3);
+}
+.col-half{
+    width: 50%;
+}
+.mt-8 {
+    margin-top: 8px!important;
+}
+.mt-16 {
+    margin-top: 16px!important;
 }
 #main{
    
@@ -172,7 +225,7 @@ box-shadow:0 0 10px rgba(0,0,0,0.3) ;
     max-width:calc(100% - 0px);
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 
 #content .section-heading{
@@ -201,12 +254,12 @@ box-shadow:0 0 10px rgba(0,0,0,0.3) ;
 margin-top: 48px;
 
 }
-
-#content .member-item{
+/* đã được thay lên class chung */
+/* #content .member-item{
     float:left;
     width: calc(100%/3);
     text-align: center;
-}
+} */
 
 #content .member-name{
     font-size: 15px;
@@ -218,28 +271,7 @@ margin-top: 48px;
    
 }
 
-.video-section{
-    /* text-align: center;
-    background-color:rgb(228, 18, 18);
-    width: 1000px;
-    height: 300px; */
-}
 
-/* .video-section*/ .video1{ 
-    margin-top:70px;
-    float:right;
-    width: 20%;
-    height: 250px;
-    
-}
-/* .video-section*/ .video2{ 
-    
-    margin-top:70px;
-    float:left;
-    width: 20%;
-    height: 250px;
-    
-}
 
 .tour-section{
     background-color:#000;
@@ -248,7 +280,7 @@ margin-top: 48px;
     list-style: none;
     background-color: #fff;
     margin-top:40px;
-    width: 85%;
+    width: 100%;
 }
 .tickets-list li{
     font-size:15px;
@@ -281,21 +313,22 @@ margin-top: 48px;
 }
 /* place */
 .places-list{
-    margin: 32px -8px 0;/*top trai-phai duoi*/
-    padding-bottom:48px ;
+    margin-top:32px;/*top trai-phai duoi*/
+    /* padding-bottom:48px ; */
 }
 
-.place-item{
+/* .place-item{
     float: left;
     width: 33,333%;
     padding:0px 8px;
-}
+} */
 
 .place-video{
     width:100%;
     display:block;
-    height: 380px;
+    
 }
+
 
 
 .place-body{
@@ -319,24 +352,68 @@ margin-top: 48px;
     line-height:1.6;
 }
 
-.place-buy-btn:hover{
+/* .place-buy-btn:hover{
     color:#000;
     background-color:#ccc;
-}
+} */
 
-.place-buy-btn{
+/* .place-buy-btn{
     color: #fff;
     background-color: #000;
-    text-decoration: none;/*bỏ gạch chân*/
+    text-decoration: none;
     padding :11px 10px;
     margin-top: 15px;
     display:inline-block;
+} */
+
+.contact-content{
+    margin-top:48px;
 }
 
+.contact-info{
+    font-size:18px;
+    line-height:1.5;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding:10px;
+    border:1px solid #ccc;
+    width: 100%;
+    
+}
+.map-section img{
+    width: 100%;
+}
 /* food review */
 #footer{
-  
+    margin: 64px 18px;
+  text-align: center;
     
+}
+#footer .socials-list{
+    font-size: 24px;
+    
+}
+#footer .copyright a:hover,
+#footer .socials-list a:hover{
+    color: rgba(0,0,0, 0.3);
+}
+#footer .socials-list a{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0,0,0,0.6);
+}
+#footer .copyright a{
+    color: rgba(0,0,0,0.6);
 }
 /* modal */
 .modal{

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Truyện QQ</title>
+    <link rel="icon" href="http://st.truyenqqpro.com/template/frontend/images/logo-icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
@@ -13,10 +14,10 @@
         <div id="header">
             <!-- begin :nav -->
             <ul id="nav">
-                <li><a href="http://truyenqqvip.com/">Home</a></li>
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://code.ptit.edu.vn/student/question">Code PTIT</a></li>
-                <li><a href="https://fullstack.edu.vn/courses/html-css">F8</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#hasu">Hasu</a></li>
+                <li><a href="#movie">movie</a></li>
+                <li><a href="#contact">personal information</a></li>
                 <li>
                     <a href="">
                         Mục lục 
@@ -26,11 +27,12 @@
                         <li><a href="http://truyenqqvip.com/truyen-dang-theo-doi.html">Theo dõi</a></li>
                         <li><a href="http://truyenqqvip.com/lich-su.html">Lịch sử</a></li>
                         <li><a href="https://www.youtube.com/">youtube</a></li>
+                        <li><a href="https://code.ptit.edu.vn/student/question">Code PTIT</a></li>
+                        <li><a href="https://fullstack.edu.vn/courses/html-css">F8</a></li>
                     </ul>
                 </li>
             </ul>
            <!-- end :nav -->
-
            <!-- begin: search button -->
            <div class="search-btn">
                <i class="search-icon ti-search"></i>
@@ -46,27 +48,27 @@
         </div>
 
         <div id="content">
-            <div class="content-section">
+            <div id="hasu" class="content-section">
                 <h2 class="section-heading">Appearance</h2>
                 <p class="section-sub-heading">Hasuki komai</p>
                 <p class="about-text">She is a teenage girl of average height, with black hair tied into a ponytail and possesses a well-endowed figure. As stated by many members of the Black Doggy House, she is very attractive and many are jealous of her closeness to Inuzuka. She occasionally wears glasses to show a serious side to her, especially with mid-terms.She is shown to be a very kind, yet hyperactive person and is known for having fun. She tends to refer to herself in the third-person, meaning she would say "Hasuki is..." instead of "I am...", though the reason for this is unknown. Despite this, Hasuki is very intelligent and when tutoring her classmates, she adopts a more serious attitude and uses a masculine speech for her speeches to put her classmates in line.</p>
             
-                <div class="members-list">
-                    <div class="member-item">
+                <div class=" row members-list">
+                    <div class="col col-third text-center">
                         <p class="member-name">hasuki</p>
                         <img src="./assets/img/hasu/hasu11.jpg" alt="" class="member-img">
                     </div>
     
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">rimuru</p>
                         <img src="./assets/img/hasu/ri12.jpg" alt="" class="member-img">
                     </div>
     
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">ACE</p>
                         <img src="./assets/img/hasu/ace11.jpg" alt="" class="member-img">
                     </div>
-                    <div class="clear"></div>
+                    <!-- <div class="clear"></div> -->
                 </div>
             </div>
             <!-- <div class="video-section">
@@ -77,7 +79,7 @@
             <div class="tour-section">
                 <!-- <video controls   src="./assets/video/ani1.mp4" class="video1"></video>
                 <video controls   src="./assets/video/ani2.mp4" class="video2"></video> -->
-                <div class="content-section">
+                <div id="movie" class="content-section">
                     <h2 class="section-heading text-while">movie</h2>
                     <p class="section-sub-heading text-while">Hasuki komai</p>
                     <ul class="tickets-list">
@@ -85,47 +87,85 @@
                         <li>Team<span class="sold-out">sold out</span></li>
                         <li>Blank<span class="quantity">2</span></li>
                     </ul>
-                    <div class="places-list">
-                        <div class="place-item">
+                    <div class="row places-list">
+                        <div class="col col-third ">
                             <video controls src="./assets/video/ani1.mp4" class="place-video"></video>
                             <div class="place-body">
                                 <h3 class="place-heading">Cute mew</h3>
                                 <p class="place-time">Fri 27 Nov 2022</p>
                                 <p class="place-desc">Maximum cuteness</p>
-                                <button class="place-buy-btn js-buy-ticket">Whatch a movie</button>
+                                <button class="btn js-buy-ticket">Whatch a movie</button>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third">
                             <video controls src="./assets/video/vi1.mp4" class="place-video"></video>
                             <div class="place-body">
                                 <h3 class="place-heading">Main</h3>
                                 <p class="place-time">Sat 28 Nov 2022</p>
                                 <p class="place-desc">Super product from Vietnam</p>
-                                <button class="place-buy-btn js-buy-ticket">Whatch a movie</button>
+                                <button class="btn js-buy-ticket">Whatch a movie</button>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third">
                             <video controls src="./assets/video/ani2.mp4" class="place-video"></video>
                             <div class="place-body">
                                 <h3 class="place-heading">Luv </h3>
                                 <p class="place-time">Sun 29 Nov 2022</p>
                                 <p class="place-desc">Watch and experience </p>
-                                <button class="place-buy-btn js-buy-ticket">Whatch a movie</button>
+                                <button class="btn js-buy-ticket">Whatch a movie</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
+                        <!-- <div class="clear"></div> -->
                     </div>
                 </div>
             </div>
             <!-- contac section -->
-            <!-- <div class="content-section">
-                <h2 class="section-heading">Appearance</h2>
-                <p class="section-sub-heading">Hasuki komai</p>
-            </div> -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading"> Contact</h2>
+                <p class="section-sub-heading">personal information</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Ha Noi, Viet Nam</p>
+                        <p><i class="ti-mobile"></i>Phone: +84  0910201900</p>
+                        <p><i class="ti-email"></i>komai@gmail.com</p>
+                    </div>
+                
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                            <div class="col col-half">
+                                <input type="text" name="" required placeholder="Name" id="" class="form-control">
+                            </div>
+                            <div class="col col-half">
+                                <input type="email" name="" required placeholder="email" id="" class="form-control">
+                            </div>
+                            <!-- <div class="clear"></div> -->
+                        </div>
+                        <div class="row mt-8">
+                            <div class="col col-full">
+                                <input type="text" name="" required placeholder="message" id="" class="form-control">
+                            </div>
+                        </div>
+                        <input class="btn pull-right mt-16" type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
+        </div>
+            <div class="map-section">
+                <img src="./assets/img/hasu/map-hn.png" alt="">
+            </div>
         </div>
         
         <div id="footer">
-
+            <div class="socials-list">
+                <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="https://fullstack.edu.vn/">f8</a></p>
         </div>
 
     </div>
@@ -164,21 +204,21 @@
     </div>
     <script>
         const buyBtns=document.querySelectorAll('.js-buy-ticket')
-        const modal=document.querySelector('.js-modal')
+        const madal=document.querySelector('.js-modal')
         const modalClose=document.querySelector('.js-modal-close')
         const modalContainer=document.querySelector('.js-modal-container')
         function showBuyTickets(){
-            modal.classList.add('open')
+            madal.classList.add('open')
         }
         function hideBuyTickets(){
-            modal.classList.remove('open')
+            madal.classList.remove('open')
         }
         for(const buyBtn of buyBtns){
             buyBtn.addEventListener('click',showBuyTickets)
         }
         modalClose.addEventListener('click',hideBuyTickets)
 
-        modal.addEventListener('click',hideBuyTickets)
+        madal.addEventListener('click',hideBuyTickets)
 
         modalContainer.addEventListener('click',function(event){      
             event.stopPropagation();
