@@ -177,8 +177,6 @@ box-shadow:0 0 10px rgba(0,0,0,0.3) ;
     line-height: 38px;
 }
 
-
-
 #nav .subnav li:hover a{
     color: #000;
     background-color: #ccc;/*màu xám*/
@@ -523,11 +521,16 @@ margin-top: 48px;
 /* ---------------------------------------------------------------------------- */
 .mobie-menu {
     position:relative;
-    top:50%;
-    transform:translateY(-50%);
+    /* top:50%;
+    transform:translateY(-50%); */
     display: none;
-    font-size: 30px;
+    font-size: 26px;
+    width: 58px;
+    padding: 10px 16px;
  
+}
+.mobie-menu:hover{
+    background-color:#ccc;
 }
 
 /* .nav-bars-btn{
